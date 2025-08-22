@@ -16,7 +16,7 @@ RUN npm install -D typescript @types/react @types/react-dom
 COPY . .
 
 # Build the app
-RUN npm run build
+RUN rm -rf dist && npm run build
 
 # Production stage
 FROM nginx:alpine
