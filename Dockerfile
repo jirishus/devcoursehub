@@ -9,6 +9,9 @@ COPY package*.json ./
 # Install dependencies
 RUN npm ci
 
+# Install TypeScript if not in package.json
+RUN npm install -D typescript @types/react @types/react-dom
+
 # Copy source code
 COPY . .
 
