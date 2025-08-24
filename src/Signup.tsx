@@ -5,10 +5,10 @@ import { FaGithub, FaFacebook } from 'react-icons/fa';
 
 export default function Signup() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
         <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+          <h2 className="mt-2 text-center text-3xl font-extrabold text-gray-900">
             Create your account
           </h2>
           <p className="mt-2 text-center text-sm text-gray-600">
@@ -58,7 +58,7 @@ export default function Signup() {
                 id="terms"
                 name="terms"
                 type="checkbox"
-                className="h-4 w-4 text-[#22C55E] focus:ring-[#22C55E] border-gray-300 rounded bg-gray-50"
+                className="h-4 w-4 text-[#22C55E] focus:ring-[#22C55E] border-gray-300 rounded bg-white checked:bg-white checked:border-[#22C55E] focus:ring-1 focus:ring-offset-1"
               />
             </div>
             <div className="ml-3 text-sm">

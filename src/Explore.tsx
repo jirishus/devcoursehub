@@ -10,6 +10,7 @@ interface Course {
   students: number;
   rating: number;
   image: string;
+  url: string;
 }
 
 export default function Explore() {
@@ -19,6 +20,54 @@ export default function Explore() {
   const courses: Course[] = [
     {
       id: 1,
+      title: 'MLOps Fundamentals',
+      description: 'Learn to deploy, monitor, and maintain machine learning models in production with MLOps best practices.',
+      category: 'AI',
+      level: 'Intermediate',
+      duration: '8 weeks',
+      students: 1876,
+      rating: 4.7,
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&auto=format&fit=crop&q=60',
+      url: 'https://www.coursera.org/learn/mlops-fundamentals',
+    },
+    {
+      id: 2,
+      title: 'DevOps for Machine Learning',
+      description: 'Implement CI/CD pipelines for ML models, containerization, and Kubernetes deployment for AI applications.',
+      category: 'AI',
+      level: 'Advanced',
+      duration: '10 weeks',
+      students: 1250,
+      rating: 4.8,
+      image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500&auto=format&fit=crop&q=60',
+      url: 'https://www.udemy.com/course/devops-for-machine-learning/',
+    },
+    {
+      id: 3,
+      title: 'MLOps with Azure Machine Learning',
+      description: 'Master MLOps using Azure Machine Learning service for model deployment and monitoring.',
+      category: 'AI',
+      level: 'Intermediate',
+      duration: '6 weeks',
+      students: 980,
+      rating: 4.6,
+      image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&auto=format&fit=crop&q=60',
+      url: 'https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-management-and-deployment',
+    },
+    {
+      id: 4,
+      title: 'Kubeflow for Machine Learning',
+      description: 'Build and deploy scalable ML workflows with Kubeflow on Kubernetes.',
+      category: 'AI',
+      level: 'Advanced',
+      duration: '7 weeks',
+      students: 845,
+      rating: 4.7,
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&auto=format&fit=crop&q=60',
+      url: 'https://www.coursera.org/learn/kubeflow-mlops',
+    },
+    {
+      id: 5,
       title: 'Modern JavaScript Fundamentals',
       description: 'Master the core concepts of modern JavaScript including ES6+ features, async/await, and functional programming.',
       category: 'Programming',
@@ -27,6 +76,7 @@ export default function Explore() {
       students: 1245,
       rating: 4.8,
       image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&auto=format&fit=crop&q=60',
+      url: 'https://www.udemy.com/course/modern-javascript-from-the-beginning/',
     },
     {
       id: 2,
@@ -38,6 +88,7 @@ export default function Explore() {
       students: 986,
       rating: 4.9,
       image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&auto=format&fit=crop&q=60',
+      url: 'https://www.udemy.com/course/react-native-the-practical-guide/',
     },
     {
       id: 3,
@@ -49,6 +100,7 @@ export default function Explore() {
       students: 2156,
       rating: 4.7,
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&auto=format&fit=crop&q=60',
+      url: 'https://www.coursera.org/learn/machine-learning',
     },
     {
       id: 4,
@@ -60,6 +112,7 @@ export default function Explore() {
       students: 875,
       rating: 4.9,
       image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=500&auto=format&fit=crop&q=60',
+      url: 'https://www.udacity.com/course/deep-learning-pytorch-free-course',
     },
     {
       id: 5,
@@ -71,6 +124,7 @@ export default function Explore() {
       students: 1542,
       rating: 4.8,
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=60',
+      url: 'https://www.theodinproject.com/paths/full-stack-javascript',
     },
     {
       id: 6,
@@ -82,6 +136,7 @@ export default function Explore() {
       students: 932,
       rating: 4.6,
       image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&auto=format&fit=crop&q=60',
+      url: 'https://www.coursera.org/specializations/natural-language-processing',
     },
   ];
 
@@ -206,9 +261,12 @@ export default function Explore() {
       {filteredCourses.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredCourses.map((course) => (
-            <div
+            <a 
               key={course.id}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200"
+              href={course.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 hover:ring-2 hover:ring-[#22C55E]"
             >
               <div className="h-40 bg-gray-200 overflow-hidden">
                 <img
@@ -227,7 +285,7 @@ export default function Explore() {
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {course.title}
                 </h3>
-                <p className="text-sm text-gray-600 mb-4">{course.description}</p>
+                <p className="text-sm text-gray-600 mb-4 line-clamp-3">{course.description}</p>
                 <div className="flex justify-between items-center text-sm text-gray-500">
                   <div className="flex items-center">
                     <svg
@@ -242,7 +300,10 @@ export default function Explore() {
                   <span>{course.students.toLocaleString()} students</span>
                 </div>
               </div>
-            </div>
+              <div className="px-5 py-3 bg-gray-50 border-t border-gray-100 text-center">
+                <span className="text-sm font-medium text-[#22C55E]">View Course →</span>
+              </div>
+            </a>
           ))}
         </div>
       ) : (
