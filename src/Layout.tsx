@@ -17,7 +17,7 @@ export default function Layout() {
           </div>
 
           <nav className="hidden md:flex items-center gap-6 text-sm text-gray-700">
-            <a href="/" className="px-3 py-1 rounded-lg transition-colors duration-150 hover:bg-gray-100 hover:text-black text-gray-700 no-underline">
+            <a href="/explore" className="px-3 py-1 rounded-lg transition-colors duration-150 hover:bg-gray-100 hover:text-black text-gray-700 no-underline">
               Curriculum
             </a>
             <a href="/" className="px-3 py-1 rounded-lg transition-colors duration-150 hover:bg-gray-100 hover:text-black text-gray-700 no-underline">

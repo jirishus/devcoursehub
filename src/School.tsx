@@ -32,9 +32,6 @@ export default function School() {
                 <Link to="/explore" className="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-gray-100 text-gray-800 px-5 py-2.5 text-sm hover:bg-gray-200 hover:no-underline">
                   Explore curriculum
                 </Link>
-                <Link to="/signup" className="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white text-gray-800 px-5 py-2.5 text-sm font-medium hover:bg-gray-50 hover:no-underline">
-                  Start Free
-                </Link>
               </div>
             </div>
 

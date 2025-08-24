@@ -119,17 +119,20 @@ export default function Explore() {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-6">
-      <h1 className="text-3xl font-bold mb-6">Explore Courses</h1>
+    <div className="max-w-7xl mx-auto px-4 pt-4 pb-12">
+      {/* <div className="mb-8">
+        <h1 className="text-3xl font-bold mb-4">Explore Courses</h1>
+        <p className="text-gray-600">Find the perfect course to advance your skills</p>
+      </div> */}
       
       {/* Search and Filter */}
-      <div className="mb-6">
+      <div className="mb-16">
         <div className="relative max-w-2xl mx-auto">
           <div className="relative">
             <input
               type="text"
               placeholder="Search courses..."
-              className="w-full px-5 py-3.5 border border-gray-200 bg-gray-50 rounded-lg focus:ring-2 focus:ring-[#22C55E] focus:border-transparent text-gray-900 placeholder-gray-500 transition-colors"
+              className="w-full px-5 py-[0.7em] border border-gray-200 bg-gray-50 rounded-lg focus:ring-2 focus:ring-[#22C55E] focus:border-transparent text-gray-900 placeholder-gray-500 transition-colors mb-4"
               value={searchQuery}
               onChange={handleSearchChange}
               onFocus={() => searchQuery.length > 1 && setShowSuggestions(true)}
@@ -137,7 +140,7 @@ export default function Explore() {
               autoComplete="off"
             />
             <svg
-              className="absolute right-3.5 top-3.5 h-5 w-5 text-gray-400"
+              className="absolute right-4 top-3.5 h-5 w-5 text-gray-400"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
