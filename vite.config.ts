@@ -8,7 +8,7 @@ const __dirname = dirname(__filename);
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Changed from '/' to './' for relative paths
+  base: '/', // Changed from '/' to './' for relative paths
   publicDir: 'public',
   define: {
     'process.env': {}
