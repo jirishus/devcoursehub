@@ -8,8 +8,11 @@ const __dirname = dirname(__filename);
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: './', // Changed from '/' to './' for relative paths
   publicDir: 'public',
+  define: {
+    'process.env': {}
+  },
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
@@ -46,14 +49,16 @@ export default defineConfig({
     port: 3000,
     open: true,
     cors: true,
+    strictPort: true,
     headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET,OPTIONS,PUT,POST,DELETE',
-      'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept, Authorization',
+      'Content-Security-Policy': "default-src 'self' 'unsafe-inline' 'unsafe-eval' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' https: data:; connect-src 'self' https:; object-src 'none'; base-uri 'self'"
     },
   },
   preview: {
     port: 3000,
     open: true,
+    headers: {
+      'Content-Security-Policy': "default-src 'self' 'unsafe-inline' 'unsafe-eval' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' https: data:; connect-src 'self' https:; object-src 'none'; base-uri 'self'"
+    }
   },
 });
