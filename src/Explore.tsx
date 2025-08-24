@@ -92,33 +92,77 @@ export default function Explore() {
         course.description.toLowerCase().indexOf(searchQuery.toLowerCase()) !== -1)
   );
 
+  // Get unique course titles for autocomplete
+  const courseTitles = [...new Set(courses.map(course => course.title))];
+  const [suggestions, setSuggestions] = useState<string[]>([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
+
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSearchQuery(value);
+    
+    if (value.length > 1) {
+      const filtered = courseTitles.filter(title =>
+        title.toLowerCase().includes(value.toLowerCase())
+      );
+      setSuggestions(filtered);
+      setShowSuggestions(true);
+    } else {
+      setSuggestions([]);
+      setShowSuggestions(false);
+    }
+  };
+
+  const selectSuggestion = (suggestion: string) => {
+    setSearchQuery(suggestion);
+    setShowSuggestions(false);
+  };
+
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-8">Explore Courses</h1>
+    <div className="max-w-7xl mx-auto px-4 py-6">
+      <h1 className="text-3xl font-bold mb-6">Explore Courses</h1>
       
       {/* Search and Filter */}
-      <div className="mb-8 space-y-4">
-        <div className="relative">
-          <input
-            type="text"
-            placeholder="Search courses..."
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#22C55E] focus:border-transparent"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-          <svg
-            className="absolute right-3 top-3.5 h-5 w-5 text-gray-400"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+      <div className="mb-6">
+        <div className="relative max-w-2xl mx-auto">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search courses..."
+              className="w-full px-5 py-3.5 border border-gray-200 bg-gray-50 rounded-lg focus:ring-2 focus:ring-[#22C55E] focus:border-transparent text-gray-900 placeholder-gray-500 transition-colors"
+              value={searchQuery}
+              onChange={handleSearchChange}
+              onFocus={() => searchQuery.length > 1 && setShowSuggestions(true)}
+              onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
+              autoComplete="off"
             />
-          </svg>
+            <svg
+              className="absolute right-3.5 top-3.5 h-5 w-5 text-gray-400"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+          
+          {showSuggestions && suggestions.length > 0 && (
+            <ul className="absolute z-10 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-60 overflow-auto">
+              {suggestions.map((suggestion, index) => (
+                <li
+                  key={index}
+                  className="px-4 py-2.5 hover:bg-gray-50 cursor-pointer text-gray-800"
+                  onMouseDown={() => selectSuggestion(suggestion)}
+                >
+                  {suggestion}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
         
         <div className="flex flex-wrap gap-2">

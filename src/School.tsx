@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function School() {
   return (
@@ -25,12 +26,15 @@ export default function School() {
                 community—all in one place.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <button className="rounded-lg bg-[#22C55E] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#16A34A]">
+                <Link to="/signup" className="rounded-lg bg-[#22C55E] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#16A34A] hover:no-underline">
                   Get started
-                </button>
-                <button className="rounded-lg border border-gray-300 bg-gray-100 text-gray-800 px-5 py-2.5 text-sm hover:bg-gray-200">
+                </Link>
+                <Link to="/explore" className="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-gray-100 text-gray-800 px-5 py-2.5 text-sm hover:bg-gray-200 hover:no-underline">
                   Explore curriculum
-                </button>
+                </Link>
+                <Link to="/signup" className="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-white text-gray-800 px-5 py-2.5 text-sm font-medium hover:bg-gray-50 hover:no-underline">
+                  Start Free
+                </Link>
               </div>
             </div>
 
@@ -108,12 +112,12 @@ export default function School() {
               </p>
 
               <div className="mt-2 flex flex-wrap gap-2 justify-center">
-                <button className="rounded-lg bg-[#22C55E] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#16A34A]">
+                <a href="/signup" className="rounded-lg bg-[#22C55E] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#16A34A] hover:no-underline">
                   Get started
-                </button>
-                <button className="rounded-lg border border-gray-300 bg-gray-100 text-gray-800 px-5 py-2.5 text-sm hover:bg-gray-200">
+                </a>
+                <a href="/explore" className="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-gray-100 text-gray-800 px-5 py-2.5 text-sm hover:bg-gray-200 hover:no-underline">
                   Explore curriculum
-                </button>
+                </a>
               </div>
 
               <div className="mt-4 flex flex-wrap gap-2 justify-center">

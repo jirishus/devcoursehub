@@ -7,6 +7,7 @@ import School from './School';
 import FAQ from './FAQ';
 import SuccessStories from './SuccessStories';
 import Explore from './Explore';
+import Signup from './Signup';
 
 const rootEl = document.getElementById("root");
 if (!rootEl) throw new Error("Root container #root not found in index.html");
@@ -20,6 +21,7 @@ ReactDOM.createRoot(rootEl).render(
           <Route path="explore" element={<Explore />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="success-stories" element={<SuccessStories />} />
+          <Route path="signup" element={<Signup />} />
         </Route>
       </Routes>
     </Router>

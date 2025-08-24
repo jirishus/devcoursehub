@@ -226,7 +226,7 @@ export const CourseList: React.FC = () => {
   </div>
 </header>
       <main style={{ width: '100%', margin: 0, padding: '0 2vw', boxSizing: 'border-box', maxWidth: '100vw' }}>
-  <div style={{ marginBottom: '2rem', textAlign: 'center' }}>
+  <div style={{ margin: '1rem 0', textAlign: 'center' }}>
     <input
       type="text"
       placeholder="Search courses..."
@@ -234,17 +234,16 @@ export const CourseList: React.FC = () => {
       onChange={e => setSearch(e.target.value)}
       style={{
         width: '100%',
-        minWidth: 0,
-        maxWidth: '100%',
+        maxWidth: '500px',
         padding: '0.75rem 1rem',
-        borderRadius: 8,
-        border: '1px solid #232946',
-        background: '#181b2a',
-        color: '#e0e0e0',
-        fontSize: '1.08rem',
+        borderRadius: '0.5rem',
+        border: '1px solid #e2e8f0',
+        background: '#f8fafc',
+        color: '#1e293b',
+        fontSize: '1rem',
         outline: 'none',
-        boxShadow: '0 1px 4px 0 rgba(0,0,0,0.05)',
-        transition: 'border-color 0.2s',
+        boxShadow: '0 1px 2px 0 rgba(0,0,0,0.05)',
+        transition: 'all 0.2s',
         margin: '0 auto',
         boxSizing: 'border-box',
         display: 'block',
