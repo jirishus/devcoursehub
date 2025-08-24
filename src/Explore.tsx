@@ -28,7 +28,7 @@ export default function Explore() {
       students: 1876,
       rating: 4.7,
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&auto=format&fit=crop&q=60',
-      url: 'https://www.coursera.org/learn/mlops-fundamentals',
+      url: 'https://www.coursera.org/learn/mlops-machine-learning-duke',
     },
     {
       id: 2,
@@ -40,7 +40,7 @@ export default function Explore() {
       students: 1250,
       rating: 4.8,
       image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500&auto=format&fit=crop&q=60',
-      url: 'https://www.udemy.com/course/devops-for-machine-learning/',
+      url: 'https://www.coursera.org/learn/devops-machine-learning-duke',
     },
     {
       id: 3,
@@ -52,7 +52,7 @@ export default function Explore() {
       students: 980,
       rating: 4.6,
       image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&auto=format&fit=crop&q=60',
-      url: 'https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-management-and-deployment',
+      url: 'https://learn.microsoft.com/en-us/training/paths/machine-learning-ops/',
     },
     {
       id: 4,
@@ -64,7 +64,7 @@ export default function Explore() {
       students: 845,
       rating: 4.7,
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&auto=format&fit=crop&q=60',
-      url: 'https://www.coursera.org/learn/kubeflow-mlops',
+      url: 'https://www.coursera.org/learn/machine-learning-in-production',
     },
     {
       id: 5,
@@ -79,7 +79,7 @@ export default function Explore() {
       url: 'https://www.udemy.com/course/modern-javascript-from-the-beginning/',
     },
     {
-      id: 2,
+      id: 6,
       title: 'React Native Masterclass',
       description: 'Build cross-platform mobile applications using React Native and Expo with best practices.',
       category: 'Programming',
@@ -91,7 +91,7 @@ export default function Explore() {
       url: 'https://www.udemy.com/course/react-native-the-practical-guide/',
     },
     {
-      id: 3,
+      id: 7,
       title: 'Introduction to Machine Learning',
       description: 'Learn the fundamentals of machine learning with Python and scikit-learn.',
       category: 'AI',
