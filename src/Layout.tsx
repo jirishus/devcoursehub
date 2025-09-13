@@ -20,7 +20,7 @@ export default function Layout() {
             <a href="/explore" className="px-3 py-1 rounded-lg transition-colors duration-150 hover:bg-gray-100 hover:text-black text-gray-700 no-underline">
               Curriculum
             </a>
-            <a href="/" className="px-3 py-1 rounded-lg transition-colors duration-150 hover:bg-gray-100 hover:text-black text-gray-700 no-underline">
+            <a href="/community" className="px-3 py-1 rounded-lg transition-colors duration-150 hover:bg-gray-100 hover:text-black text-gray-700 no-underline">
               Community
             </a>
             <a href="/success-stories" className="px-3 py-1 rounded-lg transition-colors duration-150 hover:bg-gray-100 hover:text-black text-gray-700 no-underline">
@@ -69,7 +69,7 @@ export default function Layout() {
               <ul className="space-y-2">
                 <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Blog</a></li>
                 <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Documentation</a></li>
-                <li><a href="#" className="text-sm text-gray-600 hover:text-gray-900">Community</a></li>
+                <li><a href="/community" className="text-sm text-gray-600 hover:text-gray-900">Community</a></li>
               </ul>
             </div>
             <div>
