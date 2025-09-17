@@ -34,17 +34,17 @@ export default function SuccessStories() {
     {
       id: 1,
       name: 'Sarah Chen',
-      role: 'Senior Frontend Developer',
+      role: 'Frontend Developer',
       company: 'Google',
       beforeRole: 'Marketing Coordinator',
-      story: 'After completing several courses on devcoursehub, I was able to land my dream job as a Frontend Developer. The hands-on projects were invaluable!',
-      longStory: 'I started my journey as a marketing coordinator with zero programming experience. The transition seemed impossible at first, but DevCourseHub\'s structured curriculum made it achievable. I spent 8 months dedicating 2-3 hours daily to learning. The React projects were particularly challenging but rewarding. The community support was incredible - whenever I got stuck, there was always someone willing to help. The mentorship program connected me with a senior developer at Netflix who guided me through complex concepts and helped me prepare for technical interviews. Today, I\'m leading a team of 5 developers at Google, working on products used by millions.',
+      story: 'Went from marketing to Google in 8 months. The project-based learning was key to landing interviews.',
+      longStory: 'Started as a marketing coordinator with zero programming experience. DevCourseHub\'s structured curriculum made the transition achievable. Spent 8 months learning 2-3 hours daily. The React projects and mentorship program were game-changers. Now leading a team at Google.',
       image: 'https://randomuser.me/api/portraits/women/32.jpg',
       avatar: 'SC',
       salaryIncrease: '180%',
       timeToJob: '8 months',
       coursesCompleted: 12,
-      skills: ['React', 'TypeScript', 'Node.js', 'AWS', 'GraphQL'],
+      skills: ['React', 'TypeScript', 'Node.js'],
       linkedIn: 'https://linkedin.com/in/sarah-chen-dev',
       github: 'https://github.com/sarahchen',
       portfolio: 'https://sarahchen.dev'
@@ -55,14 +55,14 @@ export default function SuccessStories() {
       role: 'Full Stack Developer',
       company: 'Stripe',
       beforeRole: 'Restaurant Manager',
-      story: 'The comprehensive curriculum helped me transition from a junior to a senior developer role within a year. The real-world projects gave me the confidence I needed.',
-      longStory: 'After 10 years managing restaurants, I knew I needed a career change. Programming always interested me, but I never thought it was possible to break into tech at 35. DevCourseHub proved me wrong. The bootcamp-style intensity combined with flexible scheduling worked perfectly for my situation. I could study after work and on weekends. The portfolio projects were game-changers - I built a full-stack e-commerce platform that impressed interviewers. The job placement support was exceptional; they helped me craft my resume, practice technical interviews, and even negotiated my salary. I went from $45k to $95k in less than a year.',
+      story: 'Career changed from restaurant management to tech at 35. Built a full-stack e-commerce app that got me hired.',
+      longStory: 'After 10 years managing restaurants, needed a career change. DevCourseHub\'s flexible scheduling worked perfectly. The portfolio projects were game-changers. Job placement support helped with resume and interviews. Went from $45k to $95k in less than a year.',
       image: 'https://randomuser.me/api/portraits/men/44.jpg',
       avatar: 'MJ',
       salaryIncrease: '110%',
       timeToJob: '10 months',
       coursesCompleted: 15,
-      skills: ['Python', 'Django', 'React', 'PostgreSQL', 'Docker'],
+      skills: ['Python', 'Django', 'React'],
       linkedIn: 'https://linkedin.com/in/marcus-johnson-dev',
       github: 'https://github.com/marcusj',
       portfolio: 'https://marcusjohnson.dev'
@@ -73,53 +73,17 @@ export default function SuccessStories() {
       role: 'React Developer',
       company: 'Airbnb',
       beforeRole: 'Graphic Designer',
-      story: 'Thanks to the mobile development courses, I was able to launch my first app on the App Store. The community support was amazing throughout my learning journey.',
-      longStory: 'As a graphic designer, I was already comfortable with visual concepts, but coding was completely foreign to me. DevCourseHub\'s approach of building real projects from day one was perfect for my learning style. I could see immediate visual results, which kept me motivated. The React course was challenging but incredibly well-structured. The instructors were always available for questions, and the community forum was like having thousands of study partners. I built 5 portfolio projects, including a React Native app that got featured on Product Hunt. The career transition took 6 months, and I tripled my income. Now I\'m working on Airbnb\'s host dashboard, impacting millions of users worldwide.',
+      story: 'Leveraged design background to transition to React development. Built 5 portfolio projects including a featured app.',
+      longStory: 'As a graphic designer, visual concepts were familiar but coding wasn\'t. DevCourseHub\'s project-first approach was perfect. Built 5 portfolio projects including a React Native app featured on Product Hunt. Tripled my income in 6 months.',
       image: 'https://randomuser.me/api/portraits/women/28.jpg',
       avatar: 'ER',
       salaryIncrease: '200%',
       timeToJob: '6 months',
       coursesCompleted: 8,
-      skills: ['React', 'React Native', 'JavaScript', 'Figma', 'CSS'],
+      skills: ['React', 'JavaScript', 'CSS'],
       linkedIn: 'https://linkedin.com/in/elena-rodriguez-dev',
       github: 'https://github.com/elenarodriguez',
       portfolio: 'https://elenarod.dev'
-    },
-    {
-      id: 4,
-      name: 'David Park',
-      role: 'DevOps Engineer',
-      company: 'Microsoft',
-      beforeRole: 'IT Support Specialist',
-      story: 'The cloud computing and DevOps courses transformed my understanding of modern infrastructure. I went from fixing computers to architecting scalable systems.',
-      longStory: 'I was stuck in IT support for 5 years, feeling like I wasn\'t growing professionally. DevCourseHub\'s DevOps specialization opened up a whole new world. Learning Docker, Kubernetes, and AWS was intimidating at first, but the hands-on labs made complex concepts click. I built a complete CI/CD pipeline for my capstone project, which became the centerpiece of my interviews. The instructors were industry professionals who shared real-world insights you can\'t get from books. The community helped me troubleshoot countless issues. Microsoft hired me as a DevOps Engineer with a $40k salary bump. I now manage infrastructure for Azure services used by millions of developers.',
-      image: 'https://randomuser.me/api/portraits/men/35.jpg',
-      avatar: 'DP',
-      salaryIncrease: '85%',
-      timeToJob: '12 months',
-      coursesCompleted: 10,
-      skills: ['AWS', 'Docker', 'Kubernetes', 'Terraform', 'Python'],
-      linkedIn: 'https://linkedin.com/in/david-park-devops',
-      github: 'https://github.com/davidpark',
-      portfolio: 'https://davidpark.tech'
-    },
-    {
-      id: 5,
-      name: 'Lisa Wang',
-      role: 'Machine Learning Engineer',
-      company: 'Tesla',
-      beforeRole: 'Data Analyst',
-      story: 'The AI/ML specialization helped me transition from analyzing data to building intelligent systems. Now I work on autonomous vehicle technology.',
-      longStory: 'I had a statistics background and worked as a data analyst, but I wanted to do more than just create reports. The machine learning courses at DevCourseHub were exactly what I needed. The curriculum covered everything from basic algorithms to deep learning and computer vision. The projects were incredibly relevant - I built a recommendation system, a natural language processing tool, and even a basic autonomous driving model. The math was challenging, but the instructors broke down complex concepts beautifully. The capstone project caught Tesla\'s attention during my interview. I\'m now working on neural networks that help cars understand their environment. The career change increased my salary by 150% and gave me the opportunity to work on cutting-edge technology.',
-      image: 'https://randomuser.me/api/portraits/women/42.jpg',
-      avatar: 'LW',
-      salaryIncrease: '150%',
-      timeToJob: '14 months',
-      coursesCompleted: 18,
-      skills: ['Python', 'TensorFlow', 'PyTorch', 'Computer Vision', 'Statistics'],
-      linkedIn: 'https://linkedin.com/in/lisa-wang-ml',
-      github: 'https://github.com/lisawang',
-      portfolio: 'https://lisawang.ai'
     }
   ];
 
@@ -128,17 +92,7 @@ export default function SuccessStories() {
       name: 'Sarah Chen',
       path: [
         { role: 'Marketing Coordinator', company: 'Local Agency', salary: '$35k', date: '2021' },
-        { role: 'Junior Frontend Developer', company: 'Startup', salary: '$65k', date: '2022' },
-        { role: 'Frontend Developer', company: 'Medium Corp', salary: '$85k', date: '2023' },
-        { role: 'Senior Frontend Developer', company: 'Google', salary: '$140k', date: '2024' }
-      ]
-    },
-    {
-      name: 'Marcus Johnson',
-      path: [
-        { role: 'Restaurant Manager', company: 'Local Restaurant', salary: '$45k', date: '2020' },
-        { role: 'Junior Developer', company: 'Agency', salary: '$70k', date: '2023' },
-        { role: 'Full Stack Developer', company: 'Stripe', salary: '$95k', date: '2024' }
+        { role: 'Frontend Developer', company: 'Google', salary: '$140k', date: '2024' }
       ]
     }
   ];
@@ -151,8 +105,7 @@ export default function SuccessStories() {
   ];
 
   const companies = [
-    'Google', 'Microsoft', 'Apple', 'Amazon', 'Meta', 'Netflix', 'Stripe', 'Airbnb', 
-    'Tesla', 'Spotify', 'Uber', 'Twitter', 'Adobe', 'Salesforce', 'Oracle'
+    'Google', 'Microsoft', 'Apple', 'Amazon', 'Meta', 'Netflix', 'Stripe', 'Airbnb'
   ];
 
   return (
@@ -162,10 +115,10 @@ export default function SuccessStories() {
         <div className="mx-auto max-w-7xl px-4 py-16">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Success Stories That Inspire
+              Success Stories
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-              Real people, real career transformations. Discover how our community members went from beginners to landing their dream jobs at top tech companies.
+              Real career transformations from our community members.
             </p>
             <Link to="/signup" className="bg-green-100 text-[#22C55E] px-8 py-3 rounded-lg font-semibold hover:bg-green-200 transition-colors hover:no-underline">
               Start Your Journey
@@ -179,11 +132,8 @@ export default function SuccessStories() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Our Impact in Numbers
+              Impact in Numbers
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              These numbers represent real career transformations and life-changing opportunities.
-            </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -203,11 +153,8 @@ export default function SuccessStories() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Featured Success Stories
+              Featured Stories
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              In-depth stories of career transformation, challenges overcome, and dreams achieved.
-            </p>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
@@ -298,11 +245,8 @@ export default function SuccessStories() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Career Progression Paths
+              Career Progression
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              See how our graduates advance from their starting point to senior roles at top companies.
-            </p>
           </div>
           
           <div className="space-y-12">
@@ -339,14 +283,11 @@ export default function SuccessStories() {
         <div className="mx-auto max-w-7xl px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Where Our Graduates Work
+              Where Graduates Work
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our alumni have landed jobs at the world's most innovative companies.
-            </p>
           </div>
           
-          <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-8 items-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
             {companies.map((company, index) => (
               <div key={index} className="text-center">
                 <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
@@ -362,10 +303,10 @@ export default function SuccessStories() {
       <section className="py-16 bg-gradient-to-r from-[#22C55E] to-[#16A34A]">
         <div className="mx-auto max-w-7xl px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to Write Your Success Story?
+            Start Your Success Story
           </h2>
           <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
-            Join thousands of developers who have transformed their careers. Your journey starts today.
+            Join thousands who transformed their careers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/signup" className="bg-white text-[#22C55E] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors hover:no-underline">
