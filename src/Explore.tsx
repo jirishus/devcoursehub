@@ -148,7 +148,7 @@ export default function Explore() {
   );
 
   // Get unique course titles for autocomplete
-  const courseTitles = [...new Set(courses.map(course => course.title))];
+  const courseTitles = Array.from(new Set(courses.map(course => course.title)));
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
 
@@ -187,7 +187,7 @@ export default function Explore() {
             <input
               type="text"
               placeholder="Search courses..."
-              className="w-full px-5 py-[0.7em] border border-gray-200 bg-gray-50 rounded-lg focus:ring-2 focus:ring-[#22C55E] focus:border-transparent text-gray-900 placeholder-gray-500 transition-colors mb-4"
+              className="w-full px-5 py-[0.7em] border border-gray-200 bg-white rounded-lg focus:ring-2 focus:ring-[#22C55E] focus:border-transparent text-gray-900 placeholder-gray-500 transition-colors mb-4"
               value={searchQuery}
               onChange={handleSearchChange}
               onFocus={() => searchQuery.length > 1 && setShowSuggestions(true)}
@@ -228,7 +228,7 @@ export default function Explore() {
             onClick={() => setSelectedCategory('all')}
             className={`px-4 py-2 text-sm rounded-full ${
               selectedCategory === 'all'
-                ? 'bg-[#22C55E] text-white'
+                ? 'bg-green-100 text-[#22C55E]'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >
@@ -238,7 +238,7 @@ export default function Explore() {
             onClick={() => setSelectedCategory('Programming')}
             className={`px-4 py-2 text-sm rounded-full ${
               selectedCategory === 'Programming'
-                ? 'bg-[#22C55E] text-white'
+                ? 'bg-green-100 text-[#22C55E]'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >
@@ -248,7 +248,7 @@ export default function Explore() {
             onClick={() => setSelectedCategory('AI')}
             className={`px-4 py-2 text-sm rounded-full ${
               selectedCategory === 'AI'
-                ? 'bg-[#22C55E] text-white'
+                ? 'bg-green-100 text-[#22C55E]'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             }`}
           >

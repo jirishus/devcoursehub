@@ -35,7 +35,7 @@ export default function Layout() {
             <a href="/explore" className="rounded-lg border border-gray-300 bg-gray-100 text-gray-800 px-4 py-2 text-sm hover:bg-gray-200 no-underline">
               Explore
             </a>
-            <a href="/signup" className="rounded-lg bg-[#22C55E] px-4 py-2 text-sm font-medium text-white hover:bg-[#16A34A]">
+            <a href="/signup" className="rounded-lg bg-green-100 px-4 py-2 text-sm font-medium text-[#22C55E] hover:bg-green-200">
               Start free
             </a>
           </div>

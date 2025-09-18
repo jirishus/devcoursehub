@@ -32,7 +32,7 @@ export default function Signup() {
                 type="email"
                 autoComplete="email"
                 required
-                className="appearance-none relative block w-full px-4 py-3 border border-gray-200 bg-gray-50 placeholder-gray-400 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#22C55E] focus:border-transparent sm:text-sm transition-colors"
+                className="appearance-none relative block w-full px-4 py-3 border border-gray-200 bg-white placeholder-gray-400 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#22C55E] focus:border-transparent sm:text-sm transition-colors"
                 placeholder="Email address"
               />
             </div>
@@ -46,7 +46,7 @@ export default function Signup() {
                 type="password"
                 autoComplete="new-password"
                 required
-                className="appearance-none relative block w-full px-4 py-3 border border-gray-200 bg-gray-50 placeholder-gray-400 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#22C55E] focus:border-transparent sm:text-sm transition-colors"
+                className="appearance-none relative block w-full px-4 py-3 border border-gray-200 bg-white placeholder-gray-400 text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#22C55E] focus:border-transparent sm:text-sm transition-colors"
                 placeholder="Password"
               />
             </div>
@@ -71,7 +71,7 @@ export default function Signup() {
           <div>
             <button
               type="submit"
-              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#22C55E] hover:bg-[#16A34A] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#22C55E]"
+              className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-[#22C55E] bg-green-100 hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#22C55E]"
             >
               Sign up
             </button>

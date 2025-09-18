@@ -270,7 +270,7 @@ export const CourseList: React.FC = () => {
         padding: '0.75rem 1rem',
         borderRadius: '0.5rem',
         border: '1px solid #e2e8f0',
-        background: '#f8fafc',
+        background: '#ffffff',
         color: '#1e293b',
         fontSize: '1rem',
         outline: 'none',

@@ -26,7 +26,7 @@ export default function School() {
                 community—all in one place.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <Link to="/signup" className="rounded-lg bg-[#22C55E] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#16A34A] hover:no-underline">
+                <Link to="/signup" className="rounded-lg bg-green-100 px-5 py-2.5 text-sm font-semibold text-[#22C55E] hover:bg-green-200 hover:no-underline">
                   Get started
                 </Link>
                 <Link to="/explore" className="inline-flex items-center justify-center rounded-lg border border-gray-300 bg-gray-100 text-gray-800 px-5 py-2.5 text-sm hover:bg-gray-200 hover:no-underline">
@@ -67,7 +67,7 @@ export default function School() {
                     </div>
                   ))}
                 </div>
-                <button className="mt-6 w-full rounded-xl bg-[#22C55E] px-4 py-2.5 text-sm font-semibold text-white hover:bg-[#16A34A]">
+                <button className="mt-6 w-full rounded-xl bg-green-100 px-4 py-2.5 text-sm font-semibold text-[#22C55E] hover:bg-green-200">
                   Continue learning
                 </button>
               </div>
