@@ -63,7 +63,7 @@ export default function Signup() {
             </div>
             <div className="ml-3 text-sm">
               <label htmlFor="terms" className="text-gray-600">
-                I agree to the <a href="#" className="font-medium text-[#22C55E] hover:underline">Terms</a> and <a href="#" className="font-medium text-[#22C55E] hover:underline">Privacy Policy</a>
+                I agree to the <a href="/terms-of-service" className="font-medium text-[#22C55E] hover:underline">Terms</a> and <a href="#" className="font-medium text-[#22C55E] hover:underline">Privacy Policy</a>
               </label>
             </div>
           </div>
