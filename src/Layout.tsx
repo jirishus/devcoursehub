@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import CookieConsent from './CookieConsent';
 
 export default function Layout() {
   return (
@@ -86,6 +87,9 @@ export default function Layout() {
           </div>
         </div>
       </footer>
+      
+      {/* Cookie Consent Popup */}
+      <CookieConsent />
     </div>
   );
 }
